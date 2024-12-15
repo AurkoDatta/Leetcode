@@ -1,4 +1,4 @@
-package org.example;
+package org.LeetCodeSols;
 
 public class num1768 {
     public static String mergeAlternately(String word1, String word2) {
