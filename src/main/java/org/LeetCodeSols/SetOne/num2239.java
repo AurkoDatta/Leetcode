@@ -1,4 +1,4 @@
-package org.LeetCodeSols;
+package org.LeetCodeSols.SetOne;
 
 public class num2239 {
     public int findClosestNumber(int[] nums) {

@@ -1,6 +1,5 @@
-package org.LeetCodeSols;
+package org.LeetCodeSols.SetOne;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class num121 {

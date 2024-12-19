@@ -1,4 +1,4 @@
-package org.LeetCodeSols;
+package org.LeetCodeSols.SetOne;
 
 import java.util.HashMap;
 import java.util.Map;
