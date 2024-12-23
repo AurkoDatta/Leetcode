@@ -1,5 +1,8 @@
 package org.LeetCodeSols.Set3;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class num1 {
     public static int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> numMap = new HashMap<>();
