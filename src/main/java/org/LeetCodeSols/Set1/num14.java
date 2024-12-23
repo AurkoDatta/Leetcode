@@ -1,4 +1,4 @@
-package org.LeetCodeSols.SetOne;
+package org.LeetCodeSols.Set1;
 
 public class num14 {
         public static String longestCommonPrefix(String[] strs) {

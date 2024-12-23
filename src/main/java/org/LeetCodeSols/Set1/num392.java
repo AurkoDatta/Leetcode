@@ -1,4 +1,4 @@
-package org.LeetCodeSols.SetOne;
+package org.LeetCodeSols.Set1;
 
 public class num392 {
     public static boolean isSubsequence(String s, String t) {

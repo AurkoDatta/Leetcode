@@ -1,4 +1,4 @@
-package org.LeetCodeSols.SetTwo;
+package org.LeetCodeSols.Set2;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,10 +8,21 @@ public class num383 {
         Map<Character, Integer> magMap = new HashMap<>();
 
         if (ransomNote.length() == 1 && magazine.length() == 1) {
-            return ransomNote.equals(magazine);
+            return ransomNote.equals(magazine); //Base case
         }
 
         Boolean result = false;
+
+        /***
+         * loop through every character in magazine. If already present in magMap increment the corresponding
+         * value of the character by 1. If not present, add it to the map and set its value to 1.
+         * Do the same for ransomNote as well and use ransMap.
+         * At the end, loop through each key in ransMap and compare its value to the same keys value in magMap.
+         * If magMap doesnt contain the value, its already false.
+         * If magMap contains less of that value than ransMap, also false
+         * If magMap has greater or equal value of that character, set result to true and continue the loop to check for
+         * the rest.
+         */
 
         for (char c : magazine.toCharArray()) {
             if (magMap.containsKey(c)) {

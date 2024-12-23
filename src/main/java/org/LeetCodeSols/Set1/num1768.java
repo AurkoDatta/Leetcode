@@ -1,4 +1,4 @@
-package org.LeetCodeSols.SetOne;
+package org.LeetCodeSols.Set1;
 
 public class num1768 {
     public static String mergeAlternately(String word1, String word2) {

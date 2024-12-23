@@ -1,4 +1,4 @@
-package org.LeetCodeSols.SetOne;
+package org.LeetCodeSols.Set1;
 
 public class num238 {
     public static int[] productExceptSelf(int[] nums) {

@@ -1,4 +1,4 @@
-package org.LeetCodeSols.SetTwo;
+package org.LeetCodeSols.Set2;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,7 +12,11 @@ public class num242 {
         Map<Character, Integer> charCount = new HashMap<>();
 
         /***
+         * Loop through each character in the two strings.
+         * For the characters in 1 string, increment the value of the character in the map by 1
+         * For the other string, decrement the same value by 1.
          * Returns true if all the values in the map are at 0.
+         * If there is an uneven number of characters in either string, one of the values in the map will not be 0.
          */
 
 

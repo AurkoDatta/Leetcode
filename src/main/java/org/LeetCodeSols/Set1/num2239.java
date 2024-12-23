@@ -1,8 +1,12 @@
-package org.LeetCodeSols.SetOne;
+package org.LeetCodeSols.Set1;
 
 public class num2239 {
     public int findClosestNumber(int[] nums) {
         int result = Integer.MAX_VALUE;
+
+        /***
+         *
+         */
 
         for (int i = 0; i < nums.length; i++) {
 
