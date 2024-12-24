@@ -3,6 +3,14 @@ package org.LeetCodeSols.Set1;
 import java.util.HashMap;
 import java.util.Map;
 
+/***
+ * First we create a dictionary (or HashMap) of all the Roman numbers and their corresponding integer value
+ * We then run a loop through the input string
+ * If the value of the character at index of the loop is smaller than the next character
+ * We subtract the following value from the result
+ * Else, we add that value to the result
+ */
+
 public class num13 {
     public int romanToInt(String s) {
 
@@ -24,11 +32,6 @@ public class num13 {
                 result += map.get(s.charAt(i));
             }
         }
-
-
-
-
-
         return result + map.get(s.charAt(s.length() - 1));
     }
 }
