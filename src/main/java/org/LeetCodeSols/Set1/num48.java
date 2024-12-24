@@ -1,5 +1,9 @@
 package org.LeetCodeSols.Set1;
 
+/***
+ * Transpose and rotate the matrix to rotate a matrix
+ */
+
 public class num48 {
     public static void rotate(int[][] matrix) {
 

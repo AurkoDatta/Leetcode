@@ -1,5 +1,11 @@
 package org.LeetCodeSols.Set1;
 
+/***
+ * We check for 3 conditions using the lengths of the two input strings
+ * Run appropriate logic for each condition, appending in that order using loops
+ */
+
+
 public class num1768 {
     public static String mergeAlternately(String word1, String word2) {
         StringBuilder sb = new StringBuilder();

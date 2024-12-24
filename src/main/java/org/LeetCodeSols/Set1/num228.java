@@ -3,6 +3,12 @@ package org.LeetCodeSols.Set1;
 import java.util.ArrayList;
 import java.util.List;
 
+/***
+ * Check the base case
+ * set a variable start to the first value in the input array
+ * Run the required logic
+ */
+
 public class num228 {
     public static List<String> summaryRanges(int[] nums) {
         List<String> result = new ArrayList<>();

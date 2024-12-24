@@ -3,6 +3,15 @@ package org.LeetCodeSols.Set1;
 import java.util.ArrayList;
 import java.util.List;
 
+/***
+ * Set starting values for the row and column
+ * Set values for the end rows and columns
+ * Traverse from left to right and increment the startRow
+ * Traverse top to bottom and decrement the endCol
+ * Traverse from right to left then decrement the endRow
+ * Traverse from bottom to top and increment the startCol
+ */
+
 public class num54 {
     public static List<Integer> spiralOrder(int[][] matrix) {
 

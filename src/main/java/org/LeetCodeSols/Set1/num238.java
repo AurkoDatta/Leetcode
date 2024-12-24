@@ -1,5 +1,13 @@
 package org.LeetCodeSols.Set1;
 
+/***
+ * run loops three times
+ * once normally
+ * once while taking a left value
+ * once from the right while taking a right value
+ */
+
+
 public class num238 {
     public static int[] productExceptSelf(int[] nums) {
         int[] output = new int[nums.length];

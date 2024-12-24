@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/***
+ * First, sort the arrays
+ * Initialize a new array prev to the first array in the input
+ * loop through the input array and sort accordingly using the prev array and another new array
+ */
+
 public class num56 {
     public static int[][] merge(int[][] intervals) {
         Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
