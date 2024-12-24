@@ -3,6 +3,12 @@ package org.LeetCodeSols.Set2;
 import java.util.HashMap;
 import java.util.Map;
 
+/***
+ * loop through the array
+ * initiate a variable complement and set it to target - (current iteration of the loop)
+ * use some logic to incorporate this into a HashMap
+ */
+
 public class num1 {
     public static int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> numMap = new HashMap<>();

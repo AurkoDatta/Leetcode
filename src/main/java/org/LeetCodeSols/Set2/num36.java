@@ -2,6 +2,15 @@ package org.LeetCodeSols.Set2;
 
 import java.util.HashSet;
 
+/***
+ * Use a nested for loop to loop through both the columns and rows of the sudoku grid
+ * If the  current position is empty, continue to the next iteration
+ * Else, set a variable value to the current value of the iteration
+ * find box index using the formula
+ * Check if the same row/colimn/box contains the value already. If contained, return false
+ * If not, add the value to its corresponding position on the hashset
+ */
+
 public class num36 {
     public static boolean isValidSudoku(char[][] board) {
 
