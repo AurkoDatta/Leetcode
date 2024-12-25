@@ -1,14 +1,14 @@
 package org.LeetCodeSols.Set3;
 
+/***
+ * Turn all the characters in the string into lowercase and remove all non-alphabetical characters
+ * Use pointers from left and right to check if both characters are equal
+ */
+
 public class num125 {
     public static boolean isPalindrome(String s) {
         s = s.toLowerCase().replaceAll("[^a-z0-9]", "");
         int l = 0, r = s.length() - 1;
-
-        /***
-         * Use pointers from left and right to check if both characters are equal
-         */
-
 
         while (l < r) {
             if (s.charAt(l) != s.charAt(r)) {

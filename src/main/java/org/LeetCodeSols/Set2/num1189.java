@@ -3,6 +3,16 @@ package org.LeetCodeSols.Set2;
 import java.util.HashMap;
 import java.util.Map;
 
+/***
+ * First loop through all the characters in the string and place them in a HashMap with their number of occurences
+ * If the map contains all the required letters for the word ballon, proceed imto the while loop
+ * Else, return 0
+ * The while loop runs under the condition that the minimum number of letters for atleast one "balloon" is present
+ * When present, increment the balloon variable by 1
+ * Subtract the all the letters required for one "balloon" along with the number of occurences required from the HashMap
+ * After the while loop ends, and you're out of the if statement, return the balloon variable
+ */
+
 public class num1189 {
     public static int maxNumberOfBalloons(String text) {
 
