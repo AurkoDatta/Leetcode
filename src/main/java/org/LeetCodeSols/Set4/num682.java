@@ -2,6 +2,10 @@ package org.LeetCodeSols.Set4;
 
 import java.util.Stack;
 
+/***
+ * Note: Also possible with ArrayList
+ */
+
 public class num682 {
     public static int calPoints(String[] operations) {
 
@@ -33,14 +37,6 @@ public class num682 {
     public static void main(String[] args) {
         String[] test = {"5","2","C","D","+"};
         System.out.println(calPoints(test));
-
-//        Stack<Integer> stack = new Stack<>();
-//        stack.push(5);
-//        stack.push(2);
-//        stack.push(1);
-//        stack.pop();
-//        System.out.println(stack);
-
     }
 
 }
