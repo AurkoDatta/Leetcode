@@ -2,6 +2,12 @@ package org.LeetCodeSols.Set3;
 
 import java.util.Arrays;
 
+/***
+ * Use a two pointer approach
+ * Calculate the current area using the formula
+ * Set the result to the max of result or the current area
+ */
+
 public class num11 {
     public int maxArea(int[] height) {
         int res = 0;
@@ -11,8 +17,10 @@ public class num11 {
             int area = Math.min(height[left], height[right]) * (right - left);
             res = Math.max(res, area);
             if (height[left] < height[right]) {
+                //If left height is smaller, increment left pointer
                 left++;
             } else {
+                //If right height is smaller or equal, increment right pointer
                 right--;
             }
         }
