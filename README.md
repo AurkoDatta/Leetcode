@@ -9,7 +9,7 @@ but a lot of the ones shown aren't readable or are very hard for beginners to un
 I hope my solutions were able to help fix your problem.
 
 
-I'm following a Leetcode roadmap called algomap (available at algomap.io) for the order in which I solve LeetCode problems.
+I'm following a Leetcode roadmap called algomap (available at algomap.io), along with NeetCode (neetcode.io) for the order in which I solve LeetCode problems.
 
 Thanks for visiting!!
 
