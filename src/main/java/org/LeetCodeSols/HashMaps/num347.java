@@ -2,6 +2,12 @@ package org.LeetCodeSols.HashMaps;
 
 import java.util.*;
 
+/***
+ * count how many times each number shows up using a HashMap
+ * throw all the map entries into a max-heap sorted by frequency
+ * pop the top k entries off the heap, those are the k most frequent numbers
+ */
+
 public class num347 {
     public int[] topKFrequent(int[] nums, int k) {
         // Create an array to store the result of the k most frequent elements
