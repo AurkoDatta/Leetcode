@@ -1,5 +1,12 @@
 package org.LeetCodeSols.LinkedList;
 
+/***
+ * list is already sorted so duplicates are always next to each other
+ * walk through with head and just compare it to head.next
+ * if they match skip over the next node, otherwise move forward
+ * keep current pointing at the original start so we can return it at the end
+ */
+
 public class num83 {
 
     public class ListNode {
