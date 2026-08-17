@@ -3,6 +3,13 @@ package org.LeetCodeSols.Stacks;
 import java.util.ArrayList;
 import java.util.List;
 
+/***
+ * backtracking, build the string one character at a time
+ * only add an open paren if we haven't used up all n of them yet
+ * only add a close paren if we have more opens placed than closes so far
+ * once the string hits length n*2 it has to be valid, so add it to the result
+ */
+
 public class num22 {
     public List<String> generateParenthesis(int n) {
         // Create a list to store all valid combinations of parentheses
