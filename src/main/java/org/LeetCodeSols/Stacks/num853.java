@@ -2,6 +2,13 @@ package org.LeetCodeSols.Stacks;
 
 import java.util.Arrays;
 
+/***
+ * sort the cars by position, starting from the one closest to target
+ * for each car figure out how long it takes to reach target on its own
+ * if a car would catch up to the one ahead of it, it just joins that fleet and slows down to match
+ * so walk through in order and only count a new fleet when a car's time is bigger than the fleet ahead of it
+ */
+
 public class num853 {
     public static int carFleet(int target, int[] position, int[] speed) {
         int n = position.length;
