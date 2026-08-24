@@ -3,6 +3,13 @@ package org.LeetCodeSols.DP;
 import java.util.HashMap;
 import java.util.Map;
 
+/***
+ * climbing n stairs one or two at a time, counting how many ways to reach the top
+ * first method recurses on n-1 and n-2 with a hashmap memo so it stops redoing work
+ * second method builds it bottom up in an array, each step is just the sum of the two before it
+ * dp[0] is set to 1 as the base case and the answer ends up sitting at dp[n]
+ */
+
 public class num70 {
     Map<Integer, Integer> memo = new HashMap<>();
     public int climbStairs(int n) {
