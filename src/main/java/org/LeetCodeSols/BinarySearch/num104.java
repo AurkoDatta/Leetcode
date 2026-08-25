@@ -1,5 +1,12 @@
 package org.LeetCodeSols.BinarySearch;
 
+/***
+ * standard binary search, array is already sorted so no tricks needed
+ * left and right pointers, check the middle each pass
+ * mid too small push left up, mid too big pull right down
+ * either equal case returns mid right away, -1 if the loop runs out
+ */
+
 public class num104 {
 
     public static int search(int[] nums, int target) {
