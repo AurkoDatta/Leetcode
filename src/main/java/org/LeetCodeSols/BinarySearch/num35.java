@@ -1,5 +1,12 @@
 package org.LeetCodeSols.BinarySearch;
 
+/***
+ * regular binary search with start and end pointers
+ * if we find the target just return mid right away
+ * otherwise keep shrinking the range like normal
+ * once the loop ends start is exactly where the target would get inserted
+ */
+
 public class num35 {
     public static int searchInsert(int[] nums, int target) {
         int start = 0;
