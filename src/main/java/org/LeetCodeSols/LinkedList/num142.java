@@ -1,5 +1,12 @@
 package org.LeetCodeSols.LinkedList;
 
+/***
+ * use fast and slow pointers, slow moves one step at a time, fast moves two
+ * if they meet somewhere inside the list there's a cycle, if fast hits null first there isn't one
+ * once they meet reset a third pointer to head and move it one step at a time alongside slow
+ * wherever those two meet next is the start of the cycle
+ */
+
 public class num142 {
     public static class ListNode {
         int val;
