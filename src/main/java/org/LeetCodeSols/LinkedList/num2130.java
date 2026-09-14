@@ -1,5 +1,12 @@
 package org.LeetCodeSols.LinkedList;
 
+/***
+ * find the middle of the list with fast and slow pointers
+ * reverse the second half in place starting from that middle node
+ * walk a pointer from the original head and a pointer from the reversed half together
+ * at each step they land on a twin pair, so add them up and keep the biggest sum seen
+ */
+
 public class num2130 {
     public static class ListNode {
         int val;
