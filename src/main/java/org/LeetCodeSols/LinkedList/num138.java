@@ -3,6 +3,13 @@ package org.LeetCodeSols.LinkedList;
 import java.util.HashMap;
 import java.util.Map;
 
+/***
+ * use a hashmap to map each original node to its cloned copy
+ * first pass walks the list and creates a clone for every node, storing original -> clone in the map
+ * second pass walks the list again and wires up next and random on each clone by looking up the originals in the map
+ * map.get(head) then gives back the head of the fully connected cloned list
+ */
+
 public class num138 {
     public static class Node {
         int val;
