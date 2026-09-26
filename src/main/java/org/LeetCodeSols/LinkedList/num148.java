@@ -1,5 +1,13 @@
 package org.LeetCodeSols.LinkedList;
 
+/***
+ * split the list into two halves using the slow and fast pointer trick, slow lands right on the midpoint as fast runs off the end
+ * cutting the link after slow turns the single list into two independent sublists that can each be sorted on their own
+ * recursively call sortList on both halves until a sublist is down to one node, which is already sorted by itself
+ * merge then walks the two sorted halves together, always attaching whichever head node holds the smaller value next
+ * once one half runs dry the rest of the other half gets attached as is, since everything left in it is already in order
+ */
+
 public class num148 {
     public static class ListNode {
         int val;
