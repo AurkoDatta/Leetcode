@@ -3,6 +3,14 @@ package org.LeetCodeSols.Arrays;
 import java.util.ArrayList;
 import java.util.List;
 
+/***
+ * the intervals come in already sorted by start time, so the new interval only needs to be merged into the right spot once
+ * the first loop copies over every interval that ends before the new one even starts, those are untouched since nothing overlaps them yet
+ * the second loop walks through every interval that overlaps the new one, stretching the new interval's bounds to swallow each one it touches
+ * once that loop stops, newInterval has grown to cover its entire overlapping range and gets added to the result as a single merged interval
+ * the last loop just copies over whatever intervals are left, they all start after the merged interval ends so none of them need touching
+ */
+
 public class num57 {
     public static int[][] insert(int[][] intervals, int[] newInterval) {
         List<int[]> result = new ArrayList<>();
