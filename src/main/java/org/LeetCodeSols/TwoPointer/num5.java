@@ -1,5 +1,13 @@
 package org.LeetCodeSols.TwoPointer;
 
+/***
+ * every palindrome has a center, either a single character for odd length or the gap between two characters for even length, so trying both center types at every index covers every possible palindrome in the string
+ * expand handles one center at a time, pushing left and right outward as long as the characters on both sides keep matching, and returns how long that stretch turned out to be once it stops
+ * len1 checks the odd center sitting right on i, len2 checks the even center sitting between i and i+1, and whichever one comes back longer is the real candidate for this index
+ * whenever that candidate beats the best length found so far, start and end get moved to bracket it, using the odd/even math to land on the right substring boundaries either way
+ * by the time every index has had a turn as a center, start and end mark out the longest palindrome seen across the whole string, so substring on those bounds gives the answer
+ */
+
 public class num5 {
     public static String longestPalindrome(String s) {
         if (s == null || s.isEmpty()) return "";
